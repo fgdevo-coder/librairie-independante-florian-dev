@@ -1,0 +1,178 @@
+/*======GÉNÉRAL DE LA PAGE======*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  font-family: Arial, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  margin-left: 50px;
+  padding: 30px 0;
+}
+/* Redonner leur fonction aux balises de mise en forme car reset.css= inherit*/
+b,
+strong {
+  font-weight: bold;
+}
+
+i,
+em {
+  font-style: italic;
+}
+/*---TITRES---*/
+h1 {
+  font-family:
+    Lucida Calligraphy,
+    cursive;
+  text-align: center;
+  font-size: 34px;
+  color: #aa3322;
+  margin: 20px 0 20px 50px;
+  text-shadow: 1px 1px 2px;
+}
+h2 {
+  text-align: center;
+  font-size: 26px;
+  color: black;
+  margin: 20px 0 20px 0px;
+  font-style: italic;
+}
+h3 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+h4{
+  color: #aa3322;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+/*---PARAGRAPHES---*/
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/*---MENU---*/
+nav {
+  background-color: #aa3322;
+}
+nav a {
+  text-decoration: none;
+  color: #cccc;
+  padding: 15px 20px;
+  display: block;
+}
+nav a:hover {
+  color: white;
+  background-color: #cccc;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  font-size: 12px;
+  border-right: 1px dashed #cccc;
+}
+.bandeau {
+  height: 150px;
+}
+/*---FOOTER---*/
+footer {
+  background-color: #aaaa;
+  color: #721717;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  min-height: 80px;
+}
+ footer p{ 
+    margin: 0;
+}
+.adress {
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+}
+.copyright {
+  font-size: 14px;
+}
+
+/*======PAGE D'ACCUEIL======*/
+
+.more {
+  font-size: 14px;
+  color: #721717;
+}
+
+.more:hover {
+  text-decoration: none;
+  color: #aaaa;
+}
+
+/*======PAGE PRESENTATION======*/
+
+.reference {
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+}
+
+/*======PAGE COUPS DE COEURS======*/
+
+.link_classique, .link_roman{
+    color: #aa3322;
+}
+.link_classique:hover, .link_roman:hover{
+    text-decoration: none;
+}
+#roman:target, #classique:target{
+  color: #aa3322;
+}
+.bloc_container {
+  display: flex;
+  gap: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bloc1, .bloc2, .bloc3{
+  border: 1px solid #aa3322;
+  background-color: #ededed;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+}
+.genre{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+}
+
+/*======PAGE EXTRAITS CHOISIS======*/
+
+.citation1, .citation2{
+
+background-color:#ededed ;
+border: 1px dashed #aa3322;
+font-size: 16px;
+padding: 20px;
+width: 450px;
+/*margin mit à 40px car déjà un margin-left a 50px pour le main car consigne 50px de marge a gauche en global*/
+margin-left: 40px;
+margin-bottom: 20px;
+}
